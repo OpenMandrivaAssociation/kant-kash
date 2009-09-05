@@ -10,6 +10,7 @@ Version:	3
 Release:	%mkrel 1
 Source0:	ftp://ftp.math.tu-berlin.de/pub/algebra/Kant/Kash_3/KASH3-Linux-i686-2008-07-31.tar.bz2
 URL:		http://www.math.tu-berlin.de/~kant/kash.html
+ExclusiveArch:	%{ix86}
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
