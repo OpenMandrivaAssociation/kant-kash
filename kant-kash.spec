@@ -1,17 +1,16 @@
+%define debug_package %{nil}
 
-%define		name			kant-kash
 %define		kashdir			%{_datadir}/kash
 
-Name:		%{name}
+Name:		kant-kash
 Group:		Sciences/Mathematics
 License:	Proprietary
 Summary:	Computational Algebraic Number Theory
 Version:	3
-Release:	%mkrel 1
+Release:	2
 Source0:	ftp://ftp.math.tu-berlin.de/pub/algebra/Kant/Kash_3/KASH3-Linux-i686-2008-07-31.tar.bz2
 URL:		http://www.math.tu-berlin.de/~kant/kash.html
 ExclusiveArch:	%{ix86}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 KANT is a software package for mathematicians interested in algebraic number
@@ -40,11 +39,7 @@ EOF
     ln -s kash3 kash
 popd
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %{_bindir}/*
 %dir %{kashdir}
 %{kashdir}/*
