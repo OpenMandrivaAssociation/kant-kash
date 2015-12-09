@@ -9,6 +9,7 @@ Summary:	Computational Algebraic Number Theory
 Version:	3
 Release:	4
 Source0:	ftp://ftp.math.tu-berlin.de/pub/algebra/Kant/Kash_3/KASH3-Linux-i686-2008-07-31.tar.bz2
+Source100:	%{name}.rpmlintrc
 URL:		http://www.math.tu-berlin.de/~kant/kash.html
 ExclusiveArch:	%{ix86}
 
